@@ -153,7 +153,7 @@
         
         const songs = [
             { name: "Pretty Green Eyes", url: "PrettyGreenEyes.mp3" },   // Your file - place it in the same folder
-            { name: "The Chemical Brothers - Go", url: "The Chemical Brothers - Go.mp3" },
+            { name: "The Chemical Brothers - Go", url: "The Chemical Brothers - Go.mp3" },  // Your file - place it in the same folder
             { name: "Cyber Groove", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
             { name: "Midnight Run", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" }
         ];
@@ -211,9 +211,9 @@
             
             const now = Date.now();
             
-            // Increase speed every 10 seconds
+            // Increase speed every 5 seconds
             if (now - lastSpeedIncrease > 10000) {
-                speed += 1;
+                speed += 1.5;
                 level++;
                 lastSpeedIncrease = now;
                 document.getElementById('level').textContent = `Level ${level}`;
